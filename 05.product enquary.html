@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Html and Its Concepts </title>
+    </head>
+
+    <body>
+        <h3> forms </h3>
+
+        <hr />
+
+        <form name="reg">
+            <table border="1px">
+                <tr>
+                    <th colspan="2"> user registration </th>
+                </tr>
+                <tr>
+                    <td> Secret Key </td>
+                    <td> <input type="hidden" name="secretkey" value="6m22B2weR" /> </td>
+                </tr>
+                <tr>
+                    <td> Account ID </td>
+                    <td> <input type="text" name="accountid" value="5653225" readonly /> </td>
+                </tr>
+                <tr>
+                    <td> Full Name </td>
+                    <td> <input type="text" name="fullname" value="" required /> </td>
+                </tr>
+                <tr>
+                    <td> Email Address </td>
+                    <td> <input type="email" name="emailaddress" value="" /> </td>
+                </tr>
+                <tr>
+                    <td> Mobile Number </td>
+                    <td> <input type="text" name="mobilenumber" value="" /> </td>
+                </tr>
+                <tr>
+                    <td> Password </td>
+                    <td> <input type="password" name="password" value="" /> </td>
+                </tr>
+                <tr>
+                    <td> Url </td>
+                    <td> <input type="url" name="url" value="" /> </td>
+                </tr>
+                <tr>
+                    <td> gender </td>
+                    <td> 
+                        <input type="radio" name="gender" value="male" /> male 
+                        <input type="radio" name="gender" value="female" /> female 
+                    </td>
+                </tr>
+                <tr>
+                    <td> skills </td>
+                    <td>
+                        <input type="checkbox" name="skills[]" value="html" /> html 
+                        <input type="checkbox" name="skills[]" value="css" /> css 
+                        <input type="checkbox" name="skills[]" value="bootstrap" /> bootstrap 
+                        <input type="checkbox" name="skills[]" value="other" /> other 
+                    </td>
+                </tr>
+                <tr>
+                    <td> country </td>
+                    <td>
+                        <select name="country">
+                            <option value=""> choose country </option>
+                            <option value="india"> india </option>
+                            <option value="usa"> usa </option>
+                            <option value="uk"> uk </option>
+                            <option value="australia"> australia </option>
+                            <option value="canada"> canada </option>
+                            <option value="other"> other </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td> area of expertise </td>
+                    <td>
+                        <select name="area_of_expertise" multiple>
+                            <option value=""> choose expertise </option>
+                            <option value="html"> html </option>
+                            <option value="css"> css </option>
+                            <option value="bootstrap"> bootstrap </option>
+                            <option value="other"> other </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td> file upload </td>
+                    <td><input type="file" name="file_upload"  /></td>
+                </tr>
+                <tr>
+                    <td> description </td>
+                    <td> <textarea name="description"></textarea> </td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td>
+                        <input type="submit" name="submit" value="submit" />
+                        <input type="reset" name="reset" value="reset" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
